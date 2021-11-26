@@ -2,3 +2,4 @@
 GitHub Actions おすなば
 test test 
 hello
+hello
