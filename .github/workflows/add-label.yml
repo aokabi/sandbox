@@ -18,13 +18,13 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    if: ${{github.event.pull_request.sender.login == 'aokabi'}}
+    if: ${{github.event.sender.login == 'aokabi'}}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-          
+      
       - name: initial labeling
         uses: andymckay/labeler@master
         with:
