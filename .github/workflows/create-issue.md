@@ -1,0 +1,16 @@
+name: create-issue
+on:
+  workflow_dispatch
+permissions:
+  issues: write
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create issue
+        uses: actions/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/some-other-template.md
+    
