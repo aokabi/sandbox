@@ -1,2 +1,2 @@
-# sandbox-github-actions
-GitHub Actions おすなば
+# sandbox
+GitHub実験場
